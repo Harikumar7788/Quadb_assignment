@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="bg-container" id="bg-container">
+       
+        <header class="header-container">
+            <div class="logo-container">
+                <h1 class="logo-heading">HODLINFO</h1>
+            </div>
+            <div class="currency-container">
+                <select>
+                    <option>INR</option>
+                </select>
+                <select id="cryptoSelect">
+                    <option value="btc" selected>BTC</option>
+                    <option value="eth">ETH</option>
+                    <option value="usdt">ZRX</option>
+                    <option value="xrp">XRP</option>
+                    <option value="trx">TRX</option>
+                    <option value="dash">NULS</option>
+                    <option value="zec">ICX</option>
+                    <option value="xem">OMG</option>
+                    <option value="iost">DENT</option>
+                    <option value="win">HOT</option>
+                    <option value="btt">FUN</option>
+                    <option value="matic">MATIC</option>
+                </select>
+               <a href = "https://wazirx.com"> <button id="buy-btn"> BUY BTC</button> </a>
+            </div>
+            <div class="theme-container"></div>
+            
+            <div class="counter" id="counter">
+                <i class="fas fa-stopwatch"></i>
+                <span id="counter-value">1</span>
+            </div>
+            
+            <div class="telegram" id="connectTelegram">
+                <i class="fa-brands fa-telegram"></i>
+                Connect Telegram
+            </div>
+
+            <div class="theme" id="theme-toggle">
+                DARK
+            </div>
+        </header>
+        <h2> Best Price to Trade</h2>
+    <div class = "top-rated-coin-container" id = "topRatedContainer">
+       
+    </div>
+      <div class="telegram-container" id="telegramContainer"  style="display: none;">
+        <div>
+        <h1>Connect <i class="fab fa-telegram-plane"></i> Telegram</h1>
+    </div>
+    <div class="section">
+        <h2>Add Bot to Your Group</h2>
+        <div class="manual">
+            <strong>Manual:</strong>
+            <ul>
+                <li>Open the Telegram app.</li>
+                <li>Open the group you want to add the bot to.</li>
+                <li>Click on "Add Members" in group settings.</li>
+                <li>Search for <strong>@HodlInfoBot</strong> and click it.</li>
+            </ul>
+        </div>
+        <div class="automatic">
+            <strong>Automatic:</strong>
+            <ul>
+                <li>Go to: <a href="https://t.me/HodlInfoBot?startgroup=true" target="_blank">https://t.me/HodlInfoBot?startgroup=true</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Chat with the Bot</h2>
+        <div class="manual">
+            <strong>Manual:</strong>
+            <ul>
+                <li>Open the Telegram app.</li>
+                <li>Click on the "New Message" button.</li>
+                <li>In the search bar, type <strong>HodlInfoBot</strong>.</li>
+                <li>Click on <strong>@HodlInfoBot</strong>.</li>
+            </ul>
+        </div>
+        <div class="automatic">
+            <strong>Automatic:</strong>
+            <ul>
+                <li>Go to: <a href="https://t.me/HodlInfoBot" target="_blank">https://t.me/HodlInfoBot</a></li>
+            </ul>
+        </div>
+    </div>
+      </div>
+
+        <div class="loader-container">
+            <div class="loader" id = "loadingcontainer">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading...</p>
+            </div>
+            <div id = "tableContainer">
+
+            </div>
+        </div>
+     <button class = "addbutton" id = "addHodlInfoBtn"> Add hodinfo to home screen</button>      
+     
+     
+     <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                Install HodlInfo
+            </div>
+            <div class="modal-body">
+                Please follow the instructions to add HodlInfo to your home screen.
+            </div>
+            <div class="modal-footer">
+                <button class="addbutton">OK</button>
+            </div>
+        </div>
+        <!-- Footer Section -->
+    </div>
+    <footer class="footer-container">
+        <p>&copy; 2024 HODLINFO. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
