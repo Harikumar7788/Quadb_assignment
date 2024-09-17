@@ -66,7 +66,7 @@ async function fetchData() {
 
   try {
     console.log("API Call Occurs");
-    const response = await axios.get('http://localhost:4000/get-tickers');
+    const response = await axios.get('http://localhost:3000/get-tickers');
     const data = response.data;
     firstObject = data[0]; 
     newData = data.slice(1,-1)
